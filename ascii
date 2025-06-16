@@ -21,7 +21,7 @@ foreach ($line in $centeredArt) {
     foreach ($char in $line.ToCharArray()) {
         $color = $colors[(Get-Random -Minimum 0 -Maximum $colors.Count)]
         Write-Host $char -ForegroundColor $color -NoNewline
-        Start-Sleep -Milliseconds 10  # Animation effect
+        Start-Sleep -Milliseconds 5  # Animation effect
     }
     Write-Host "" 
 }
