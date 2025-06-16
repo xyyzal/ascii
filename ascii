@@ -1,7 +1,6 @@
 
 $colors = @([System.ConsoleColor]::Red, [System.ConsoleColor]::Yellow, [System.ConsoleColor]::Blue, [System.ConsoleColor]::Cyan)
 
-
 $art = @"
     __  __                                _   _           ____     ____ 
     \ \/ /  _   _   _   _   ____   __ _  | | ( )  ___    |  _ \   / ___|
@@ -15,7 +14,6 @@ $art = @"
      \____| |_| |_|  \___|  \___| |_|\_\  \___| |_|
 "@
 
-
 $width = [System.Console]::WindowWidth
 $centeredArt = $art.Split("`n") | ForEach-Object { $_.PadLeft(($_.Length + ($width - $_.Length) / 2)) }
 
@@ -27,3 +25,5 @@ foreach ($line in $centeredArt) {
     }
     Write-Host "" 
 }
+
+Write-Host ""
